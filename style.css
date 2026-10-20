@@ -125,13 +125,14 @@ body {
     margin: 70px;
     margin-top:0;
     padding: 2em;
-    background-color: #f4f4f4;
+    background-color: black;
+    color: white;
 }
 
 
 h1, h2 {
     font-family: 'Space Mono';
-    color: #333;
+    color: #b31217;
 }
 
 h3{
