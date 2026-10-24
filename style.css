@@ -11,17 +11,13 @@ body{
 }
 
 .container{
-    display:flex;
-    min-height:100vh;
-    padding:50px;
-    gap:60px;
+    width:100%;
+    padding:0;
+    margin-top:70px;
 }
 
 .info{
-    width:35%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    width:100%;
 }
 
 .nombre{
@@ -417,5 +413,138 @@ h3{
 }
 
 .info h1{
+    color:#9b1111;
+    font-size:24px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-left:0;
+    padding-left:0;
+    margin-bottom:25px;
+}
+
+#bitacora{
+    margin-top:70px;
+    padding-left:0;
+}
+
+.info{
+    width:100%;
+    max-width:none;
+}
+
+.bitacora-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 330px);
+    gap:30px;
+    justify-content:center;
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.bitacora-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.bitacora-card img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    display:block;
+}
+
+.bitacora-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.88);
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:20px;
+
+    opacity:0;
+    transition:0.3s;
+}
+
+.bitacora-card:hover .bitacora-overlay{
+    opacity:1;
+}
+
+.bitacora-overlay h3{
+    color:#9b1111;
+    margin-bottom:10px;
+}
+.detalle-clase{
+    display:flex;
+    align-items:flex-start;
+    gap:60px;
+    max-width:1200px;
+    margin:70px auto;
+}
+
+.detalle-imagen{
+    width:50%;
+}
+
+.detalle-imagen img{
+    width:100%;
+    display:block;
+}
+
+.detalle-texto{
+    width:50%;
+}
+.volver{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+.volver:hover{
+    color:#9b1111;
+}
+.subtitulo{
+    color:#d9d9d9;
+    font-style:italic;
+    line-height:1.6;
+    margin-bottom:80px;
+}
+
+.detalle-texto img{
+    width:100%;
+    max-width:400px;
+    margin-top:15px;
+    border-radius:8px;
+}
+.detalle-texto{
+    width:50%;
+    padding-top:180px;
+}
+.subtitulo{
+    color:#d9d9d9;
+    font-style:italic;
+    line-height:1.6;
     margin-bottom:50px;
+}
+.detalle-texto h1{
+    color:#9b1111;
+    font-size:35px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-top:120px;
+    margin-bottom:20px;
 }
